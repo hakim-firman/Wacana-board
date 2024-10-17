@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    font-family:"Ubuntu Mono", monospace;
+  }
+}
+
+@layer utilities {
+  .brutalism{
+    @apply mb-[3px] mr-[3px] border-2  shadow
+  }
+  .brutalism-pressed {
+    @apply translate-x-[2.5px] translate-y-[2.5px] shadow-active
+  }
+
+  .brutalism-active:active{
+    @apply active:translate-x-[2.5px] translate-y-[2.5px] shadow-active
+  }
+  .brutalism-focus:focus{
+    @apply focus-visible:translate-x-[2.5px] translate-y-[2.5px] ring-0 shadow-active
+  }
+
+}
