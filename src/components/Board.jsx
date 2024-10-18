@@ -1,6 +1,7 @@
 import React from 'react'
 import { Column } from './Column'
 import { DEFAULT_CARDS } from '../data/data'
+import { BurnerBarrel } from './BurnerBarrel'
 
 export const Board = () => {
     const [cards, setCards] = React.useState(DEFAULT_CARDS)
@@ -34,6 +35,7 @@ export const Board = () => {
             cards={cards}
             setCards={setCards}
         />
+        <BurnerBarrel setCards={setCards} />
     </div>
   )
 }
