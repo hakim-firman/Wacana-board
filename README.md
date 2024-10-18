@@ -1,8 +1,11 @@
-# React + Vite
+# Wacana-board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/user-attachments/assets/4269cb99-8f2b-4098-b4de-8e7add4cbf1c)
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js** – The foundation of the project, providing a component-based architecture for building the UI.
+- **Tailwind CSS** – Used for styling the application with utility-first CSS classes.
+- **Framer Motion** – Provides smooth animations and transitions for an enhanced user experience.
+- **React Icons** – A library for including various icons in the project.
+
