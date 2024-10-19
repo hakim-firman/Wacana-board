@@ -4,7 +4,20 @@ import { DEFAULT_CARDS } from '../data/data'
 import { BurnerBarrel } from './BurnerBarrel'
 
 export const Board = () => {
-    const [cards, setCards] = React.useState(DEFAULT_CARDS)
+    const [cards, setCards] = React.useState([])
+    const [hasChanged, setHasChanged] = React.useState(false)
+
+    React.useEffect(() => {
+        const cardData=localStorage.getItem('cards');
+
+        setCards(cardData ? JSON.parse(cardData) : [Default_CARDS])  
+        setHasChanged(true) 
+    }, [])
+
+    React.useEffect(() => {
+        hasChanged && localStorage.setItem('cards', JSON.stringify(cards))
+    }, [cards])
+    
   return (
     <div className='flex h-full w-full gap-3 overflow-auto p-12 justify-center'>
         <Column
