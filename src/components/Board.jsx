@@ -10,7 +10,7 @@ export const Board = () => {
     React.useEffect(() => {
         const cardData=localStorage.getItem('cards');
 
-        setCards(cardData ? JSON.parse(cardData) : [Default_CARDS])  
+        setCards(cardData ? JSON.parse(cardData) : [DEFAULT_CARDS])  
         setHasChanged(true) 
     }, [])
 
